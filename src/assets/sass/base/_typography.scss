@@ -1,0 +1,113 @@
+@use '../utilities' as *;
+
+body {
+  font-family: $main-body-font;
+  font-size: var(--step-0);
+  line-height: $body-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $titles-font;
+    font-weight: 500;
+    line-height: $titles-line-height;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+.h1 {
+    font-size: var(--step-5);
+}
+
+h2,
+.h2 {
+    font-size: var(--step-4);
+}
+
+h3,
+.h3 {
+    font-size: var(--step-3);
+}
+
+p {
+    margin: 0;
+}
+
+.lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.4;
+
+    // @include mq(md) {
+    //     font-size: 2rem;
+    // }
+}
+
+.smalltitle {
+    font-size: 0.875rem;
+    // font-family: var(--font-family-base);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+a {
+    // color: var(--color-primary);
+    text-decoration: none;
+
+    // @include hover-focus {
+    //     color: var(--color-primary-offset);
+    // }
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.5rem;
+    font-family: Georgia, serif;
+    quotes: '“' '”' '‘' '’';
+
+    > p {
+        text-indent: -0.6ch;
+
+        &::before {
+            content: open-quote;
+        }
+
+        &::after {
+            content: close-quote;
+        }
+    }
+
+    footer {
+        margin-top: 1rem;
+        // font-family: var(--font-family-base);
+        font-style: normal;
+        font-size: 0.75em;
+    }
+    cite {
+        font-style: normal;
+    }
+}
+
+.bookmarklet {
+    display: inline-block;
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #43a9a3 !important;
+    background-color: rgba(#43a9a3, 0.25);
+    color: #43a9a3;
+    box-shadow: none !important;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+
+    &:active {
+        cursor: -moz-grabbing;
+        cursor: -webkit-grabbing;
+    }
+}

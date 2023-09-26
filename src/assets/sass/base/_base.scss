@@ -1,0 +1,15 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+
+  // * {
+  //   outline: red 1px solid;
+  // }
+}
+
+svg {
+  width: 100%;
+}

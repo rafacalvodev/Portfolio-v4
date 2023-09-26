@@ -1,0 +1,159 @@
+@use '../abstracts' as *;
+
+.home-section {
+  --flow-spacer: 1em;
+  padding: var(--section-spacing) 0;
+
+  ul {
+    padding: 0;
+  }
+
+  svg {
+    width: 4.2rem;
+    height: 4.2rem;
+  }
+}
+
+.home-hero {
+  margin-top: 4rem;
+  display: grid;
+  gap: 1em;
+  align-items: center;
+  text-align: center;
+
+  grid-template-areas: 
+    "title"
+    "img"
+    "text"
+    "cta"
+  ;
+
+  @include mq(small) {
+    grid-template-areas: 
+    "title img"
+    "text img"
+    "cta img"
+  ;
+
+    text-align: start;
+  }
+
+  @include mq(medium) {
+    grid-template-areas: 
+    "title img"
+    "text img"
+    "cta img"
+  ;
+    text-align: start;
+  }
+
+  &__title {
+    grid-area: title;
+  }
+
+  &__intro {
+    grid-area: text;
+  }
+
+  &__cta {
+    grid-area: cta;
+  }
+
+  &__img {
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    height: 100%;
+    max-height: 25em;
+    max-width: 17em;
+    min-width: 12em;
+    width: 25vw;
+  }
+}
+
+.services-home {
+  &__list {
+    --grid-gap: 1em;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(16rem,2fr));
+    gap: var(--grid-gap);
+    margin-bottom: 3rem;
+    //  @include mq(small) {
+    //    --grid-gap: 1em;
+    //  }
+
+      @include mq(medium) {
+        --grid-gap: 1.5em;
+      }
+  }
+
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+
+    &__img {
+      height: 8em;
+      width: 100%;
+      background-color: cyan;
+    }
+
+    &__icon {
+      position: absolute;
+      width: 5rem;
+      height: 5rem;
+      background-color: yellow;
+      border-radius: 100%;
+      border: var(--color-card-bg) 0.5rem solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: calc(50% - 5em);
+
+      @include mq(small) {
+        top: 21%;
+      }
+
+      @include mq(medium) {
+        top: 29%;
+      }
+    }
+
+    &__content {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+  }
+}
+
+.portfolio-home {
+  --flow-spacer: 1em;
+
+  .projects-container {
+    margin-bottom: 3rem;
+
+    .button {
+      background-color: var(--color-secondary);
+      color: var(--color-card-bg);
+      padding: 0.3em 0.6em;
+      font-size: var(--step-0);
+    }
+  }
+}
+
+
+.contact-home {
+  --text-bottom: 1.5rem;
+  .contact-home__text {
+
+    padding: 1em;
+  }
+}

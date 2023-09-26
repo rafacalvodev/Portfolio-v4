@@ -1,0 +1,116 @@
+---
+layout: base.njk
+---
+<!-- Icons from: https://www.mingcute.com/ -->
+<div class="[ wrapper ]">
+  <section class="[ home-hero ]">
+    <h1 class="home-hero__title">{{ hero.title }}</h1>
+    <p class="home-hero__intro">{{ hero.intro }}</p>
+    <div class="home-hero__cta">
+      <a class="button primary" href="{{ hero.projectLink }}">{{ hero.projectBtn }}</a>
+      <a class="button secondary" href="{{ hero.contactLink }}">{{ hero.contactBtn }}</a>
+    </div>
+    <div class="home-hero__img">
+      <img  src="../assets/images/rafaelcalvo.png" alt="" srcset="">
+    </div>
+  </section>
+</div>
+<!-- Services Section -->
+<section class="[ home-section ] [ services-home ]">
+  <div class="wrapper flow">
+    <h2>{{services.title}}</h2>
+    <p>{{services.shortSummary}}</p>
+    <ul role="list" class="services-home__list">
+      <li class="card service-card">
+        <div class="service-card__img"></div>
+        <div class="service-card__icon">
+          {% include "icons/wordpress.svg" %}
+        </div>
+        <div class="service-card__content">
+          <h3>{{services.webDesignTitle}}</h3>
+          <p>{{services.webDesignText}}</p>
+        </div>
+      </li>
+      <li class="card service-card">
+        <div class="service-card__img"></div>
+        <div class="service-card__icon">
+          {% include "icons/wordpress.svg" %}
+        </div>
+        <div class="service-card__content">
+          <h3>{{services.devTitle}}</h3>
+          <p>{{services.devText}}</p>
+        </div>
+      </li>
+      <li class="card service-card">
+        <div class="service-card__img"></div>
+        <div class="service-card__icon">
+          {% include "icons/wordpress.svg" %}
+        </div>
+        <div class="service-card__content">
+          <h3>{{services.maintenanceTitle}}</h3>
+          <p>{{services.maintenanceText}}</p>
+        </div>
+      </li>
+      <!-- <li class="card service-card">
+        <div class="service-card__img"></div>
+        <div class="service-card__icon">
+          {% include "icons/wordpress.svg" %}
+        </div>
+        <div class="service-card__content">
+          <h3>{{services.seoTitle}}</h3>
+          <p>{{services.seoText}}</p>
+        </div>
+      </li> -->
+    </ul>
+    <a class="button primary" href="{{ services.buttonLink }}" >{{services.buttonText}}</a>
+  </div>
+</section>
+<!-- Portfolio section -->
+<section class="[ home-section ] [ portfolio-home ]">
+  <div class="wrapper flow">
+    <h2> {{projects.title}} </h2>
+    <p>{{projects.summary}}</p>
+    <!-- This is the projects grid -->
+    <div class="projects-container flow">
+      {% set projectlist = collections["projects_" + page.lang] %} {% for project in
+      projectlist | limit(2) %}
+      <article class="project card">
+        <div class="project__img">
+          {% if project.data.image %} {% image project.data.image, "object-fit-cover" ,
+          "object-fit-cover", project.data.alt, "lazy", "(min-width: 1600px) 50vw, 100vw" %}
+          {% endif %}
+        </div>    
+        <div class="project__info flow">
+          <!-- <span class="pill">{{ project.data.type }}</span> -->
+          <h3>{{ project.data.title }}</h3>
+          <ul class="project__detail" role="list">
+            {% for item in project.data.technologies %}
+            <li><span class="tag">{{ item }}</span></li>
+            {% endfor %}
+          </ul>
+          <p>{{ project.data.lead | safe }}</p>
+          <a
+            class="button"
+            href="{{ project.data.clientURL }}"
+            >{{ project.data.clientURL | replace("https://www.", "") }}</a
+          >
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <a class="button primary" href="{{projects.link}}">{{projects.button}}</a>
+  </div>
+</section>
+<!-- Contact section -->
+<section class="[ home-section ] [ contact-home ]">
+  <div class="wrapper">
+    <article class="contact-home__text card flow">
+      <h2>{{ contact.title }}</h2>
+      <p>{{ contact.summary }}</p>
+      <a class="button primary" href="{{ contact.link }}">{{ contact.button }}</a>
+    </article>
+    <aside>
+      <div class="contact-home__img"></div>
+    </aside>
+  </div>
+</section>

@@ -1,0 +1,70 @@
+@use '../abstracts' as *;
+
+.card {
+  background-color: var(--color-card-bg);
+  width: 100%;
+  border-bottom: var(--color-border) 0.5em solid;
+  box-shadow: 5px 5px 6px 0px var(--color-shadow);
+  -webkit-box-shadow: 5px 5px 6px 0px var(--color-shadow);
+  -moz-box-shadow: 5px 5px 6px 0px var(--color-shadow);
+
+  p {
+    margin-bottom: var(--text-bottom);
+  }
+
+  img, picture {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.project {
+  --text-bottom: 1.5rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  ul {
+    padding: 0;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // img, picture {
+    
+
+  //   @include mq(small) {
+  //     height: auto;
+  //     width: 100%;
+  //   }
+ 
+  //   @include mq(medium) {
+  //     height: auto;
+  //     width: 100%;
+  //   }
+  // }
+
+  &__info {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    flex-grow: 2;
+  }
+
+   @include mq(small) {
+     grid-template-columns: repeat(2, 1fr);
+   }
+
+   @include mq(medium) {
+    grid-template-columns: repeat(2, 1fr);
+   }
+}

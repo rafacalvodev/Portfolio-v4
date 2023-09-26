@@ -1,0 +1,29 @@
+@font-face {
+  font-family:'Plavsky';
+  font-weight: 400;
+  src: url('/assets/fonts/Plavsky.woff2') format('woff2'),;
+  src: url('/assets/fonts/Plavsky.woff') format('woff'),;
+}
+
+@font-face {
+  font-family: 'Plavsky';
+  font-weight: 600;
+  src: url('/assets/fonts/Plavsky-Bold.woff2') format('woff2'),;
+  src: url('/assets/fonts/Plavsky-Bold.woff') format('woff'),;
+}
+
+@font-face {
+  font-family: 'Plavsky';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/assets/fonts/Plavsky-Italic.woff2') format('woff2'),;
+  src: url('/assets/fonts/Plavsky-Italic.woff') format('woff'),;
+}
+
+@font-face {
+  font-family: 'Plavsky';
+  font-style: italic;
+  font-weight: 600;
+  src: url('/assets/fonts/Plavsky-Bold-Italic.woff2') format('woff2'),;
+  src: url('/assets/fonts/Plavsky-Bold-Italic.woff') format('woff'),;
+}

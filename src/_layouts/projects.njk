@@ -1,0 +1,54 @@
+---
+layout: base.njk
+---
+
+<header class="section overflow-hidden" style="--spot-color: var(--color-tertiary)">
+  <div
+    class="section__inner region"
+    style="--region-space-bottom: var(--space-3xl); --region-space-top: var(--space-3xl)"
+  >
+    <div class="wrapper | content relative avatar-content">
+      <section class="prose | avatar-content__inner">
+        <h1 class="fade-in-bottom">{{ title }}</h1>
+        <p>{{ lead }}</p>
+      </section>
+    </div>
+  </div>
+</header>
+
+<div class="wrapper">
+  <div class="projects-container flow">
+    {% set projectlist = collections["projects_" + page.lang] %} {% for project in
+    projectlist %}
+    <article class="project card">
+      <div class="project__img">
+        {% if project.data.image %} {% image project.data.image, "object-fit-cover" ,
+        "object-fit-cover", project.data.alt, "lazy", "(min-width: 1600px) 50vw, 100vw" %}
+        {% endif %}
+      </div>    
+      <div class="project__info flow">
+        <!-- <span class="pill">{{ project.data.type }}</span> -->
+        <h3>{{ project.data.title }}</h3>
+        <ul class="project__tags" role="list">
+          {% for item in project.data.technologies %}
+          <li><span>{{ item }}</span></li>
+          {% endfor %}
+        </ul>
+        <p>{{ project.data.lead | safe }}</p>
+        <a
+          class="button"
+          href="{{ project.data.clientURL }}"
+          >{{ project.data.clientURL | replace("https://www.", "") }}</a
+        >
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</div>
+
+<div
+  class="region"
+  style="--region-space-top: var(--space-3xl); --region-space-bottom: 0"
+>
+  {% include 'partials/cta.njk' %}
+</div>

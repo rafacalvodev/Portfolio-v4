@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}" dir="{{ languages[page.lang].dir or 'ltr' }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{{ title }}</title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+
+    <link
+      rel="alternate"
+      hreflang="{{ page.lang }}"
+      href="{{ meta.url }}{{ page.url }}"
+    />
+
+    {% for link in page.url | locale_links %}
+    <link
+      rel="alternate"
+      hreflang="{{ link.lang }}"
+      href="{{ meta.url }}{{ link.url }}"
+    />
+    {% endfor %}
+
+    <link rel="canonical" href="{{ meta.url }}{{ page.url }}" />
+    <meta
+      name="description"
+      content="{% if description %}
+    {{ description }}
+    {% else %}
+    {{ meta.siteDescription }}
+    {% endif %}"
+    />
+    <meta name="generator" content="{{ eleventy.generator }}" />
+    <meta property="og:site_name" content="{{ meta.siteName }}" />
+    <meta property="og:title" content="{{ title }} | {{ meta.siteName }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="{{ description or meta.siteDescription }}" />
+    <meta property="og:url" content="{{ meta.url }}{{ page.url }}" />
+    <meta property="og:locale" content="{{ page.lang }}" />
+    <meta property="og:image" content="{{ meta.url }}{{ meta.ogImage }}" />
+  </head>
+
+  <body>
+    <a id="skip-nav" class="skip-link sr-only" href="#main">{{ languages[page.lang].skipText }}</a>
+    {% include "partials/nav.njk" %}
+    <main id="#main">
+      {{ content | safe }}
+    </main>
+
+    {% include "partials/footer.njk" %}
+  </body>
+</html>

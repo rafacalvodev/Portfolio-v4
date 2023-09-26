@@ -1,0 +1,60 @@
+<footer id="footer" class="site-footer">
+  <div class="wrapper">
+    <div class="site-footer__inner flow">
+      <div class="social-nav flow">
+        <p>{{ languages[page.lang].socialText }}</p>
+        <nav class="social-nav__menu">
+          <ul class="social-nav__list" role="list">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">CodePen</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-footer__navbar">
+        <nav id="footernav"  class="[ navbar ]" aria-label="{{ meta[page.lang].ariaLabels.mainMenu }}">
+          <ul  class="[ nav-list ]" role="list">
+            {% for item in navigation[page.lang].top %}
+            <li>
+              <a
+                href="{{ item.url }}"
+                {{
+                helpers.getLinkActiveState(item.url,
+                page.url)
+                |
+                safe
+                }}
+                >{{ item.text }}</a
+              >
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- <div class="lang-select" aria-label="{{ languages[page.lang].ariaLang }}">
+      {% for link in page.url | locale_links %} {%- if not loop.first %}/{% endif %}
+      {{ languages[page.lang].availableText }}
+      <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">{{
+        link.label
+      }}</a>
+      {% endfor %}
+    </div> -->
+  </div>
+</footer>
+
+<!-- alternative language switcher -->
+<!-- <footer>
+  <nav id="footer" aria-label="{{ languages[page.lang].ariaLang }}">
+    <a href="{{ page.url }}" lang="{{ page.lang }}" hreflang="{{ page.lang }}">
+      {{ page.lang | upper }}
+    </a>
+
+    {% for link in page.url | locale_links %}
+    <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">
+      {{ link.lang | upper }}</a
+    >
+    {% endfor %}
+  </nav>
+</footer> -->

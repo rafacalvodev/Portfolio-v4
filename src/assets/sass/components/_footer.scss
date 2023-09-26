@@ -1,0 +1,32 @@
+.site-footer {
+  --flow-spacer: 1rem;
+  background-color: var(--color-secondary);
+  padding: 1em 0;
+  color: var(--color-nav-text);
+  font-weight: 600;
+
+  a {
+    color: inherit;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  &__inner {
+    text-align: center;
+  }
+
+  .social-nav__list {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .nav-list {
+    display: flex;
+    margin-inline: auto;
+    justify-content: center;
+  }
+}

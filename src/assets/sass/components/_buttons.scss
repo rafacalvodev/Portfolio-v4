@@ -1,0 +1,18 @@
+.button {
+  padding: 0.2em 1.6em;
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: var(--step-1);
+  border: 2px solid var(--color-border);
+  border-radius: 0.5em;
+
+
+}
+
+.primary {
+  background-color: var(--color-primary);
+}
+
+.secondary {
+  background-color: var(--color-card-bg);
+}
