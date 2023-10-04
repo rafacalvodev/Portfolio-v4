@@ -17,13 +17,11 @@ services:
   buttonText: 'Conoce más'
   buttonLink: 'es/servicios/'
   webDesignTitle: 'Diseño personalizado'
-  webDesignText: 'Lorem ipsum dolor sit amet consectetur. Quis tincidunt vel vulputate.'
+  webDesignText: 'Diseñaré la página web para que sea fácil de usar y guíe a los visitantes al objetivo.'
   devTitle: 'Desarrollo a medida'
-  devText: 'Lorem ipsum dolor sit amet consectetur. Quis tincidunt vel vulputate.'
+  devText: 'Haré que la página web sea flexible y rápida. Bien sea una landing page o algo más grande.'
   maintenanceTitle: 'Mantenimiento constante'
-  maintenanceText: 'Lorem ipsum dolor sit amet consectetur. Quis tincidunt vel vulputate.'
-  seoTitle: 'Optimización SEO'
-  seoText: 'Lorem ipsum dolor sit amet consectetur. Quis tincidunt vel vulputate.'
+  maintenanceText: 'Mantendré la página a tono, lista para alguna futura modificación bien sea algo nuevo o hacerle mejoras.'
 projects:
   title: Algunos de mis trabajos más recientes
   summary: Aquí está una muestra de los trabajos más recientes en los que he trabajado.

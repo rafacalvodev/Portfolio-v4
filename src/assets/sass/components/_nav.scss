@@ -44,9 +44,12 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 0 clamp(1.09rem,1rem + .47vw,1.33rem);
+  a {
+    text-decoration: none;
+  }
 }
 
 .navbar a:where(:hover, :focus) {
-  border-block-end: 2px solid #fff;
+  border-block-end: 2px solid var(--color-card-bg);
 }
 

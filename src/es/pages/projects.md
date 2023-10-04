@@ -1,13 +1,14 @@
 ---
+layout: projects.njk
 title: Proyectos
 permalink: /{{ locale }}/proyectos/index.html
 redirectFrom: [/proyectos/]
 key: 'projects'
 description: 'Escaparate de proyectos recientes. Saber que los páginas web que construyo para mis clientes les ayudan a crecer y tener más éxito es increíble.'
-layout: projects.njk
-lead: 'Escaparate de proyectos recientes. Saber que los páginas web que construyo para mis clientes les ayudan a crecer y a tener más éxito es increíble.'
-cta:
-  title: '¡Ponte en contacto!'
-  desktop: ' ¿Acabas de abrir un restaurante?, ¿Diseñas ropa y necesitas un shop?, ¿Eres coach?, ¿Actriz, actor, cantante?'
-  lead: '¡Mándame un correo a [hola@lenesaile.com](mailto:hola@lenesaile.com) y cuéntame tu proyecto, oportunidades o lo que tengas en mente! Siempre estoy dispuesta a charlar'
+lead: 'Escaparate de los proyectos que he hecho. Aquí se muestran los trabajos que he realizado para diferentes y como los han ayudado a crecer crecer.'
+contact:
+  title: '¿Listo para empezar?'
+  summary: 'Puedes ponerte en contacto conmigo para discutir qué proyecto quieres y cómo se puede hacer.'
+  link: '/es/contact/'
+  button: 'Hablemos'
 ---

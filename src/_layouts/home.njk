@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 ---
-<!-- Icons from: https://www.mingcute.com/ -->
+
 <div class="[ wrapper ]">
   <section class="[ home-hero ]">
     <h1 class="home-hero__title">{{ hero.title }}</h1>
@@ -21,46 +21,36 @@ layout: base.njk
     <h2>{{services.title}}</h2>
     <p>{{services.shortSummary}}</p>
     <ul role="list" class="services-home__list">
-      <li class="card service-card">
+      <li class="card service-card first">
         <div class="service-card__img"></div>
         <div class="service-card__icon">
-          {% include "icons/wordpress.svg" %}
+          {% include "icons/design.svg" %}
         </div>
-        <div class="service-card__content">
+        <div class="service-card__content flow">
           <h3>{{services.webDesignTitle}}</h3>
           <p>{{services.webDesignText}}</p>
         </div>
       </li>
-      <li class="card service-card">
+      <li class="card service-card second">
         <div class="service-card__img"></div>
         <div class="service-card__icon">
-          {% include "icons/wordpress.svg" %}
+          {% include "icons/dev.svg" %}
         </div>
-        <div class="service-card__content">
+        <div class="service-card__content flow">
           <h3>{{services.devTitle}}</h3>
           <p>{{services.devText}}</p>
         </div>
       </li>
-      <li class="card service-card">
+      <li class="card service-card third">
         <div class="service-card__img"></div>
         <div class="service-card__icon">
-          {% include "icons/wordpress.svg" %}
+          {% include "icons/setting.svg" %}
         </div>
-        <div class="service-card__content">
+        <div class="service-card__content flow">
           <h3>{{services.maintenanceTitle}}</h3>
           <p>{{services.maintenanceText}}</p>
         </div>
       </li>
-      <!-- <li class="card service-card">
-        <div class="service-card__img"></div>
-        <div class="service-card__icon">
-          {% include "icons/wordpress.svg" %}
-        </div>
-        <div class="service-card__content">
-          <h3>{{services.seoTitle}}</h3>
-          <p>{{services.seoText}}</p>
-        </div>
-      </li> -->
     </ul>
     <a class="button primary" href="{{ services.buttonLink }}" >{{services.buttonText}}</a>
   </div>
@@ -102,15 +92,4 @@ layout: base.njk
   </div>
 </section>
 <!-- Contact section -->
-<section class="[ home-section ] [ contact-home ]">
-  <div class="wrapper">
-    <article class="contact-home__text card flow">
-      <h2>{{ contact.title }}</h2>
-      <p>{{ contact.summary }}</p>
-      <a class="button primary" href="{{ contact.link }}">{{ contact.button }}</a>
-    </article>
-    <aside>
-      <div class="contact-home__img"></div>
-    </aside>
-  </div>
-</section>
+{% include "partials/contact-cta.njk" %}

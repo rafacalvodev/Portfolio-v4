@@ -1,0 +1,23 @@
+.form-section {
+  margin-block: 4rem;
+}
+
+.main-form {
+  max-width: 45rem;
+  margin-inline: auto;
+
+  label {
+    font-weight: 600;
+  }
+
+  input, textarea {
+    border: 0.1em solid var(--color-secondary);
+    padding: 0.2em;
+  }
+}
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 1.5rem;
+}

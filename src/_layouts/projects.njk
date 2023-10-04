@@ -2,22 +2,12 @@
 layout: base.njk
 ---
 
-<header class="section overflow-hidden" style="--spot-color: var(--color-tertiary)">
-  <div
-    class="section__inner region"
-    style="--region-space-bottom: var(--space-3xl); --region-space-top: var(--space-3xl)"
-  >
-    <div class="wrapper | content relative avatar-content">
-      <section class="prose | avatar-content__inner">
-        <h1 class="fade-in-bottom">{{ title }}</h1>
-        <p>{{ lead }}</p>
-      </section>
-    </div>
-  </div>
-</header>
+<!-- Page Header -->
+{% include "partials/page-header.njk" %}
 
-<div class="wrapper">
-  <div class="projects-container flow">
+<section class="[ portfolio-section ]">
+  <!-- Projects list -->
+  <div class="projects-container wrapper flow">
     {% set projectlist = collections["projects_" + page.lang] %} {% for project in
     projectlist %}
     <article class="project card">
@@ -26,12 +16,12 @@ layout: base.njk
         "object-fit-cover", project.data.alt, "lazy", "(min-width: 1600px) 50vw, 100vw" %}
         {% endif %}
       </div>    
-      <div class="project__info flow">
+      <div class="project__info">
         <!-- <span class="pill">{{ project.data.type }}</span> -->
         <h3>{{ project.data.title }}</h3>
-        <ul class="project__tags" role="list">
+        <ul class="project__detail" role="list">
           {% for item in project.data.technologies %}
-          <li><span>{{ item }}</span></li>
+          <li><span class="tag">{{ item }}</span></li>
           {% endfor %}
         </ul>
         <p>{{ project.data.lead | safe }}</p>
@@ -44,11 +34,7 @@ layout: base.njk
     </article>
     {% endfor %}
   </div>
-</div>
+</section>
 
-<div
-  class="region"
-  style="--region-space-top: var(--space-3xl); --region-space-bottom: 0"
->
-  {% include 'partials/cta.njk' %}
-</div>
+<!-- Contact section -->
+{% include "partials/contact-cta.njk" %}

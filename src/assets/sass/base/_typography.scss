@@ -57,22 +57,25 @@ p {
 }
 
 a {
-    // color: var(--color-primary);
-    text-decoration: none;
+    color: currentcolor;
+    text-decoration-color: currentcolor;
+    text-decoration-thickness: 0.1rem;
 
-    // @include hover-focus {
-    //     color: var(--color-primary-offset);
-    // }
+    &:where(:hover, :focus) {
+        text-decoration: none;
+    }
 }
 
 blockquote {
     font-style: italic;
-    font-size: 1.5rem;
-    font-family: Georgia, serif;
+    // font-size: 1.5rem;
+    // font-family: Georgia, serif;
     quotes: '“' '”' '‘' '’';
+    padding: 0.75em;
+    border-left: .3rem solid var(--color-secondary);
 
     > p {
-        text-indent: -0.6ch;
+        // text-indent: -0.6ch;
 
         &::before {
             content: open-quote;

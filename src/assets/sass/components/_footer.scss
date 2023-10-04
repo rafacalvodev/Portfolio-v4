@@ -5,13 +5,14 @@
   color: var(--color-nav-text);
   font-weight: 600;
 
-  a {
-    color: inherit;
-  }
-
   ul {
     padding: 0;
   }
+
+  a {
+    text-decoration: none;
+  }
+
 
   &__inner {
     text-align: center;

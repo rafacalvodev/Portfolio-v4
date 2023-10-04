@@ -1,0 +1,15 @@
+<form class="main-form flow" name="contact" method="POST" data-netlify="true">
+  <div class="form-element flow">
+    <label for="name">{{label.name}}</label>
+    <input type="text" name="name" id="name" pattern="[A-Za-z ]{1,100}" autocomplete="on" required />
+  </div>
+  <div class="form-element flow">
+    <label for="email">{{label.email}}</label>
+    <input type="text" name="email" id="email" autocapitalize="none" pattern="[^@]+@[^\.]+\..+" autocomplete="on" required />
+  </div>
+  <div class="form-element flow">
+    <label for="message">{{label.message}}</label>
+    <textarea name="message" id="message" rows="8" required></textarea>
+  </div>
+  <button class="button primary" type="submit">{{ button }}</button>
+</form>

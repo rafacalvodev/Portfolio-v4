@@ -68,3 +68,13 @@
     grid-template-columns: repeat(2, 1fr);
    }
 }
+
+.contact-card {
+  --text-bottom: 1.5rem;
+  --flow-spacer: 1em;
+  padding: var(--section-spacing) 0;
+  
+  .contact-home__text {
+    padding: 1em;
+  }
+}

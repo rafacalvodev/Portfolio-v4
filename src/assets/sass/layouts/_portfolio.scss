@@ -1,0 +1,15 @@
+.portfolio-section {
+  --flow-spacer: 1.5em;
+  padding: var(--section-spacing) 0;
+
+  .projects-container {
+    margin-bottom: 3rem;
+
+    .button {
+      background-color: var(--color-secondary);
+      color: var(--color-card-bg);
+      padding: 0.3em 0.6em;
+      font-size: var(--step-0);
+    }
+  }
+}

@@ -1,0 +1,75 @@
+---
+layout: base.njk
+---
+
+<!-- Page Header -->
+{% include "partials/page-header.njk" %}
+<!-- Services main section -->
+<section class="main-services">
+  <div class="wrapper flow">
+    <ul role="list" class="main-services__list">
+      <li class="card main-service-card first">
+        <div class="main-service-card__img"></div>
+        <div class="main-service-card__icon">
+          {% include "svg/chat.svg" %}
+        </div>
+        <div class="main-service-card__content flow">
+          <h3>{{services.reviewTitle}}</h3>
+          <p>{{services.reviewText}}</p>
+        </div>
+      </li>
+      <li class="card main-service-card second">
+        <div class="main-service-card__img"></div>
+        <div class="main-service-card__icon">
+          {% include "svg/edit.svg" %}
+        </div>
+        <div class="main-service-card__content flow">
+          <h3>{{services.webDesignTitle}}</h3>
+          <p>{{services.webDesignText}}</p>
+        </div>
+      </li>
+      <li class="card main-service-card third">
+        <div class="main-service-card__img"></div>
+        <div class="main-service-card__icon">
+          {% include "svg/code-block.svg" %}
+        </div>
+        <div class="main-service-card__content flow">
+          <h3>{{services.devTitle}}</h3>
+          <p>{{services.devText}}</p>
+        </div>
+      </li>
+      <li class="card main-service-card fourth">
+        <div class="main-service-card__img"></div>
+        <div class="main-service-card__icon">
+          {% include "icons/setting.svg" %}
+        </div>
+        <div class="main-service-card__content flow">
+          <h3>{{services.maintenanceTitle}}</h3>
+          <p>{{services.maintenanceText}}</p>
+        </div>
+      </li>
+      <li class="card main-service-card fifth">
+        <div class="main-service-card__img"></div>
+        <div class="main-service-card__icon">
+          {% include "svg/search.svg" %}
+        </div>
+        <div class="main-service-card__content flow">
+          <h3>{{services.seoTitle}}</h3>
+          <p>{{services.seoText}}</p>
+        </div>
+      </li>
+      <li class="card main-service-card sixth">
+        <div class="main-service-card__img"></div>
+        <div class="main-service-card__icon">
+          {% include "icons/setting.svg" %}
+        </div>
+        <div class="main-service-card__content flow">
+          <h3>{{services.maintenanceTitle}}</h3>
+          <p>{{services.maintenanceText}}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- Contact section -->
+{% include "partials/contact-cta.njk" %}

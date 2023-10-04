@@ -30,9 +30,9 @@
 
 
   /* SECTION SPACING */
-  --section-spacing: 2.5em;
+  --section-spacing: 2em;
   @include mq(medium) {
-    --section-spacing: 5em;
+    --section-spacing: 4em;
   }
 
   /* SPACING VARIABLES */
