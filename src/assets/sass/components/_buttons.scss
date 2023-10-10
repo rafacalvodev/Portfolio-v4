@@ -10,8 +10,18 @@
 
 .primary {
   background-color: var(--color-primary);
+  transition: border-color 200ms ease-in-out;
+
+  &:hover {
+    border-color: var(--color-primary);
+  }
 }
 
 .secondary {
   background-color: var(--color-card-bg);
+  transition: border-color 200ms ease-in-out;
+
+  &:hover {
+    border-color: var(--color-card-bg);
+  }
 }

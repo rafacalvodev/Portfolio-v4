@@ -1,5 +1,5 @@
 ---
-title: 'Página en español'
+title: 'Rafael Calvo | Desarrollador Web'
 description: 'Esta es la versión en español de la página inical'
 layout: home.njk
 permalink: /{{ locale }}/index.html

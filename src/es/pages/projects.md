@@ -4,7 +4,7 @@ title: Proyectos
 permalink: /{{ locale }}/proyectos/index.html
 redirectFrom: [/proyectos/]
 key: 'projects'
-description: 'Escaparate de proyectos recientes. Saber que los páginas web que construyo para mis clientes les ayudan a crecer y tener más éxito es increíble.'
+description: 'Escaparate de los proyectos que he hecho. Aquí se muestran los trabajos que he realizado para diferentes y como los han ayudado a crecer crecer.'
 lead: 'Escaparate de los proyectos que he hecho. Aquí se muestran los trabajos que he realizado para diferentes y como los han ayudado a crecer crecer.'
 contact:
   title: '¿Listo para empezar?'

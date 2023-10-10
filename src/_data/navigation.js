@@ -1,10 +1,10 @@
 module.exports = {
   en: {
     top: [
-      {
-        text: 'Home',
-        url: '/en/'
-      },
+      // {
+      //   text: 'Home',
+      //   url: '/en/'
+      // },
       {
         text: 'About me',
         url: '/en/about/'
@@ -40,10 +40,10 @@ module.exports = {
 
   es: {
     top: [
-      {
-        text: 'Inicio',
-        url: '/es/'
-      },
+      // {
+      //   text: 'Inicio',
+      //   url: '/es/'
+      // },
       {
         text: 'Sobre mí',
         url: '/es/sobre-mi/'

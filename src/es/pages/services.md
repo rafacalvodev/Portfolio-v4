@@ -1,8 +1,9 @@
 ---
-slugOverride: 'servicios'
 layout: services.njk
-
 title: Servicios
+description: 'Servicios que ofrezco como desarrollador web.'
+slugOverride: 'servicios'
+
 lead: Me dedico principalmente a desarrollar cosas para la web. Mi enfoque es HTML semántico, algo de CSS y una pizca de JavaScript para darle sabor. Doy valor al rendimiento, la accesibilidad, la simplicidad y el soporte a largo plazo.
 
 services:

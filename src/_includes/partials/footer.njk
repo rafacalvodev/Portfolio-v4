@@ -5,10 +5,38 @@
         <p>{{ languages[page.lang].socialText }}</p>
         <nav class="social-nav__menu">
           <ul class="social-nav__list" role="list">
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">CodePen</a></li>
+            <li>
+              <a href="#">
+                <span class="sr-only">Github</span>
+                <div>
+                  {% include "svg/github-line.svg" %}
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="sr-only">Twitter</span>
+                <div>
+                  {% include "svg/twitter-line.svg" %}
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="sr-only">Instagram</span>
+                <div>
+                  {% include "svg/linkedin-box-line.svg" %}
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="sr-only">Codepen</span>
+                <div>
+                  {% include "svg/codepen-line.svg" %}
+                </div>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -31,6 +59,12 @@
             {% endfor %}
           </ul>
         </nav>
+      </div>
+      <div class="site-footer__copy">
+        <p class="site-author">
+          &copy; {% year %}  <a class="name-link" rel="me" href="/{{ page.lang }}/">
+        Rafael Calvo</a>
+      </p>
       </div>
     </div>
     <!-- <div class="lang-select" aria-label="{{ languages[page.lang].ariaLang }}">

@@ -1,10 +1,10 @@
 ---
 layout: about.njk
 title: 'About me'
-description: 'Texto de prueba sobre la página de Acerca de'
+description: 'Some information about me'
 slugOverride: about
 key: 'about'
-lead: 'Desarrollador web nacido en Caracas, Venezuela. Creando páginas web (y algunos blogs) desde 2017. '
+lead: 'Web Developer born in Caracas, Venezuela. Making websites (and some blogs) sinmce 2017.'
 
 contact:
   title: 'Ready to begin?'

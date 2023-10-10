@@ -12,6 +12,14 @@
   a {
     text-decoration: none;
   }
+  
+  svg {
+    width: 2em;
+  }
+
+  path {
+    fill: var(--color-card-bg);
+  }
 
 
   &__inner {
@@ -29,5 +37,13 @@
     display: flex;
     margin-inline: auto;
     justify-content: center;
+  }
+
+  .site-author {
+    font-size: var(--step--1);
+  }
+
+  .name-link {
+    border-block-end: 2px solid var(--color-card-bg);
   }
 }

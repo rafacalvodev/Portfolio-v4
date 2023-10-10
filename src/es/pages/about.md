@@ -1,7 +1,7 @@
 ---
 layout: about.njk
 title: 'Sobre mí'
-description: 'Texto de prueba sobre la página de Acerca de'
+description: 'Algo de información sobre mi'
 slugOverride: 'sobre mi'
 key: 'about'
 lead: 'Desarrollador web nacido en Caracas, Venezuela. Creando páginas web (y algunos blogs) desde 2017. '
