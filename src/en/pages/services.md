@@ -17,8 +17,8 @@ services:
   maintenanceText: 'Your website is constantly growing. That is why I will keep the site up to date, ready for any future modification either something new or improvements. Security and performance updates included.'
   seoTitle: 'SEO'
   seoText: 'I will design the semantic HTML structure and information architecture for search engines to better understand your content. This will help to improve organic positioning in the various search engines.'
-  contentTitle: ''
-  contentText: ''
+  contentTitle: 'Content'
+  contentText: 'Your website will be filled with information and content relevant to your field to reinforce the unique identity of your brand. The content can be articles, blogs, product descriptions, among others.'
 
 contact:
   title: 'Ready to begin?'

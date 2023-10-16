@@ -17,6 +17,8 @@ services:
   maintenanceText: 'Tu página web está en constante crecimiento. Por eso mantendré la página a tono, lista para alguna futura modificación bien sea algo nuevo o hacerle mejoras. Actualizaciones de seguridad y rendimiento incluidas.'
   seoTitle: 'SEO'
   seoText: 'Diseñaré la estructura semántica de HTML y la arquitectura de la información para que los buscadores entiendan mejor tu contenido. Esto ayudará a mejorar el posicionamiento orgánico.'
+  contentTitle: 'Contenido'
+  contentText: 'Tu página web será llenada con información y contenido relevante a tu campo para así reforzar la identidad única de tu marca. El contenido puede ser artículos, blogs, descripciones de productos, entre otras.'
 
 contact:
   title: '¿Listo para empezar?'
