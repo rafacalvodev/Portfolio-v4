@@ -1,6 +1,6 @@
 ---
 title: JP Freight Services
-date: 2023-01-29
+date: 2023-01-16
 key: 'jpfreight'
 technologies:
   - Custom design

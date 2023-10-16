@@ -1,6 +1,6 @@
 ---
 title: Fulfillment By Amazon
-date: 2023-01-27
+date: 2022-12-17
 key: 'fba'
 technologies:
   - Custom design
